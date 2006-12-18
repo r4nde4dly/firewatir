@@ -1,3 +1,4 @@
+#labels Phase-Deploy,Featured
 *What is it?*
 
 Firewatir is a tool that allows WATiR scripts written for IE to work with the Firefox 
