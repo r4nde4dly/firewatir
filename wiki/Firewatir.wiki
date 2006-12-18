@@ -1,8 +1,6 @@
-#Document describing how to use Firewatir? Some inner details about Firewatir.
-
 *What is it?*
 
-FireWatir is a tool that allows WATiR scripts written for IE to work with the FireFox 
+Firewatir is a tool that allows WATiR scripts written for IE to work with the FireFox 
 browser as well. This usually requires either no change or very small changes to existing 
 scripts. This works with Firefox 1.5 and above.
 
@@ -12,12 +10,12 @@ To be done.&nbsp;
 
 *Where do I get it?&nbsp;*
 
-FireWatir has been moved to Google code. Like other ruby projects Firewatir also has a 
+Firewatir has been moved to Google code. Like other ruby projects Firewatir also has a 
 gem. You can get the gem [here http://code.google.com/p/firewatir/downloads/list].
 
 *How it works*
 
-FireWatir extension uses [JSSh|http://www.croczilla.com/jssh/](TCP/IP JavaScript Shell 
+Firewatir uses [JSSh|http://www.croczilla.com/jssh/](TCP/IP JavaScript Shell 
 Server for Mozilla) to drive the FireFox browser. JSSh allows other programs (like 
 telnet) to establish JavaScript shell connections to a running Mozilla process. Once that 
 connection is made, we can send JavaScript commands over the connection, which are 
@@ -67,13 +65,13 @@ To quit, just type:
 
 Goodbye\!
 
-FireWatir uses this underlying mechanism to drive FireFox. FireWatir creates a socket and 
+Firewatir uses this underlying mechanism to drive FireFox. Firewatir creates a socket and 
 connects to the JSSh port on which the target FireFox browser instance's JSSh server is 
 listening. Note that the FireFox instance must have the JSSh extension loaded, and the 
 browser must have been started with the \-jssh option (That's one hyphen before the jssh, 
 not two). Right now this needs to be done manually.
 
-FireWatir translates WATiR code into a JavaScript equivalent, which is then transmitted 
+Firewatir translates WATiR code into a JavaScript equivalent, which is then transmitted 
 to the JSSh server and executed against the DOM of the page loaded in the browser. The 
 top level interface - i.e. the WATiR methods that a tester or programmer can use to write 
 a test script thus stay the same, although the target browser and the mechanism by which 
@@ -81,7 +79,7 @@ it is driven are very different.
 
 *Design Considerations*
 
-While writing the FireWatir extension our main goal was to re-use as much of existing 
+While writing the Firewatir tool our main goal was to re-use as much of existing 
 code (that was written for IE). So we reorganized the code in 'watir.rb' into the 
 following files:
 
