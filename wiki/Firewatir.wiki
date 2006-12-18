@@ -1,0 +1,120 @@
+#Document describing how to use Firewatir? Some inner details about Firewatir.
+
+*What is it?*
+
+FireWatir is a tool that allows WATiR scripts written for IE to work with the FireFox 
+browser as well. This usually requires either no change or very small changes to existing 
+scripts. This works with Firefox 1.5 and above.
+
+*How do I use it?&nbsp;*
+
+To be done.&nbsp;
+
+*Where do I get it?&nbsp;*
+
+FireWatir has been moved to Google code. Like other ruby projects Firewatir also has a 
+gem. You can get the gem [here http://code.google.com/p/firewatir/downloads/list].
+
+*How it works*
+
+FireWatir extension uses [JSSh|http://www.croczilla.com/jssh/](TCP/IP JavaScript Shell 
+Server for Mozilla) to drive the FireFox browser. JSSh allows other programs (like 
+telnet) to establish JavaScript shell connections to a running Mozilla process. Once that 
+connection is made, we can send JavaScript commands over the connection, which are 
+executed against the DOM of the page loaded in the browser. JSSh listens on port 9997 by 
+default.
+
+*A Sample JSSh session*
+
+$telnet localhost 9997
+
+This will connect to the JavaScript Shell server listening on port 9997 (the default 
+port) on the local machine (i.e. you are telnet-ing from the same machine on which the 
+FireFox instance you want to drive using JSSh is running. JSSh can be also be used to 
+deive a FireFox instance on a remote machine. If this is what you want to do, replace 
+localhost with the hostname of the remote machine). Once a connection to the JSSh server 
+inside the FireFox instance has been successfully made, you should see the following 
+message:
+
+Welcome to the Mozilla JavaScript Shell\!
+
+Now you can send JavaScript commands that will run inside the browser and which can 
+access the DOM for pages in the browser. The JS shell prompt character is '>'
+
+> var w0 = getWindows()\[0\];
+
+getWindows() returns an array of currently opened windows. Get the first opened window in 
+variable 'w0'.
+
+> var browser = w0.getBrowser();
+
+getBrowser() returns the instance of browser inside window. Store that in 
+variable 'browser'.
+
+> browser.loadURI("http://www.croczilla.com/svg/");
+
+This will load url 'http://www.croczilla.com/svg/' in the browser.
+
+> var doc = browser.contentDocument;
+
+Get the document object inside the browser. Now you can use any method that is supported 
+for HTMLDocumentElement. Note that there are some methods that are supported by IE but 
+not by FireFox.
+
+To quit, just type:
+
+> exit()
+
+Goodbye\!
+
+FireWatir uses this underlying mechanism to drive FireFox. FireWatir creates a socket and 
+connects to the JSSh port on which the target FireFox browser instance's JSSh server is 
+listening. Note that the FireFox instance must have the JSSh extension loaded, and the 
+browser must have been started with the \-jssh option (That's one hyphen before the jssh, 
+not two). Right now this needs to be done manually.
+
+FireWatir translates WATiR code into a JavaScript equivalent, which is then transmitted 
+to the JSSh server and executed against the DOM of the page loaded in the browser. The 
+top level interface - i.e. the WATiR methods that a tester or programmer can use to write 
+a test script thus stay the same, although the target browser and the mechanism by which 
+it is driven are very different.
+
+*Design Considerations*
+
+While writing the FireWatir extension our main goal was to re-use as much of existing 
+code (that was written for IE). So we reorganized the code in 'watir.rb' into the 
+following files:
+
+1. _container.rb_ : This file contains the module 'Container'. The code here is browser 
+independent.
+
+2. _htmlelements.rb_ : This file contains code for accessing HTML elements and performing 
+various operations on them. This is also browser independent code.
+
+3. _MozillaBaseElement.rb_ : This file contains base class for all HTML elements. This 
+file is for accessing & performing operation on HTML elements in Mozilla browser.
+
+4. _firewatir.rb_ : This file contains the code for driving the brower. More specifically 
+this files contains the code to change the browser state or to get the browser state, 
+Attaching to new pop up window, clicking on javascript button etc.
+
+All the classes defined for HTML elements in '_htmlelements.rb_' inherit from 'Element' 
+class. The definition of 'Element' class comes from '_MozillaBaseElement.rb_'.
+
+*Installation*
+
+For installation read the [Installation 
+Document|http://code.google.com/p/firewatir/downloads/list].
+
+*Installation Gotchas*
+Coming Soon
+
+*TroubleShooting*
+1. After installing the XPI for JSSh make sure that you restart  FireFox. JSSh extension 
+will not be visible in the extensions windows. You should restart Firefox using '-jssh' 
+option. For e.g.: "C:\Program Files\Firefox\firefox.exe \-jssh".
+
+2. Check if JSSh is installed correctly by connecting to port 9997 using Telnet (telnet 
+localhost 9997 if you are telnet-ing from the same machine on which your FireFox instance 
+is running, or telnet testhost 9997 where testhost is the hostname of the remote machine 
+on which FireFox is running).
