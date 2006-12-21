@@ -1,7 +1,7 @@
 #labels Phase-Deploy,Featured
 *What is it?*
 
-FireWatir is a tool that allows WATiR scripts written for IE to work with the Firefox 
+"FireWatir" is a tool that allows WATiR scripts written for IE to work with the Firefox 
 browser as well. This usually requires either no change or very small changes to existing 
 scripts. This works with Firefox 1.5 and above.
 
