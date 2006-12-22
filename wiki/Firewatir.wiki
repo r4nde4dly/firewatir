@@ -7,12 +7,11 @@ scripts. This works with Firefox 1.5 and above.
 
 *How do I use it?*
 
-To be done.&nbsp;
+To be done.
 
 *Where do I get it?*
 
-FireWatir has been moved to Google code. Like other ruby projects FireWatir also has a 
-gem. You can get the gem [http://code.google.com/p/firewatir/downloads/list here].
+Like other ruby projects FireWatir also has a gem. You can get the gem http://code.google.com/p/firewatir/downloads/list here].
 
 *How it works*
 
@@ -102,13 +101,13 @@ class. The definition of 'Element' class comes from '_MozillaBaseElement.rb_'.
 
 *Installation*
 
-For installation read the [http://code.google.com/p/firewatir/downloads/list Installation 
-Document].
+For installation read the [http://code.google.com/p/firewatir/downloads/list/|Installation Document].
 
 *Installation Gotchas*
 Coming Soon
 
 *TroubleShooting*
+
 1. After installing the XPI for JSSh make sure that you restart  FireFox. JSSh extension 
 will not be visible in the extensions windows. You should restart Firefox using '-jssh' 
 option. For e.g.: "C:\Program Files\Firefox\firefox.exe -jssh".
@@ -117,3 +116,6 @@ option. For e.g.: "C:\Program Files\Firefox\firefox.exe -jssh".
 localhost 9997 if you are telnet-ing from the same machine on which your FireFox instance 
 is running, or telnet testhost 9997 where testhost is the hostname of the remote machine 
 on which FireFox is running).
+
+
+
