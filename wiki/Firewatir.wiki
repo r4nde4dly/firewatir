@@ -11,7 +11,7 @@ To be done.
 
 *Where do I get it?*
 
-Like other ruby projects FireWatir also has a gem. You can get the gem http://code.google.com/p/firewatir/downloads/list here].
+Like other ruby projects FireWatir also has a gem. You can get the gem [http://code.google.com/p/firewatir/downloads/list here].
 
 *How it works*
 
@@ -116,6 +116,5 @@ option. For e.g.: "C:\Program Files\Firefox\firefox.exe -jssh".
 localhost 9997 if you are telnet-ing from the same machine on which your FireFox instance 
 is running, or telnet testhost 9997 where testhost is the hostname of the remote machine 
 on which FireFox is running).
-
 
 
