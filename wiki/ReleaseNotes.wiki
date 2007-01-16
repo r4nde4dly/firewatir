@@ -5,24 +5,23 @@
 This is FireWatir Web Application Testing In Ruby using Firefox browser. 
 
 = To Install = 
-    Follow the installation document "Installation Guide.doc" at http://code.google.com/p/firewatir/
+Follow the installation document "Installation Guide.doc" at http://code.google.com/p/firewatir/
   
 = How To Use =
 #Install ruby from http://ruby-lang.org
 #Download FireWatir and other installables from "http://code.google.com/p/firewatir/" and follow the "Installation Guide.doc".
-   #On windows and Linux, its been tested with firefox version  1.5, 1.5.0.4, 1.5.0.7, 2.0 and 2.0.0.1.
-   #This has also been tested using Ruby ruby 1.8.2 and ruby 1.8.5 using  Windows 2003 server Enterprise Edition
-   and XP Professional.
-   #Check out the mail lists at "http://groups.google.co.in/group/firewatir" to discuss all issues the and refre the documentation for firewatir.
+#On windows and Linux, its been tested with firefox version  1.5, 1.5.0.4, 1.5.0.7, 2.0 and 2.0.0.1.
+#This has also been tested using Ruby ruby 1.8.2 and ruby 1.8.5 using  Windows 2003 server Enterprise Edition and XP Professional.
+#Check out the mail lists at "http://groups.google.co.in/group/firewatir" to discuss all issues the and refre the documentation for firewatir.
    
 = Unit Tests =
-   Run the unittests in a cmd shell. Go to the dir where you installed it and then type 'ruby unittests/mozilla_all_tests.rb'.
-   See the "Installation Guide.doc", if you are having problems with security blocking.
+#Run the unittests in a cmd shell. Go to the dir where you installed it and then type 'ruby unittests/mozilla_all_tests.rb'.
+#See the "Installation Guide.doc", if you are having problems with security blocking.
 
 = Features in 1.0 =
 
 = Typical usage = 
-    # include the controller
+    "#" include the controller
     require "firewatir"
 
     # go to the page you want to test
