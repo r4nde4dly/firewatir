@@ -1,0 +1,22 @@
+#summary One-sentence summary of this page.
+
+= Introduction =
+
+
+This is FireWatir - Web Application Testing In Ruby using Firefox browser. 
+
+Features in 1.0:
+Contacts: 
+Contributors:
+Acknowledgements:
+
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
+
+
