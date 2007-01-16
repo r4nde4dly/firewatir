@@ -1,4 +1,4 @@
-Release notes for Firewatir version 1.0
+==Release notes for Firewatir version 1.0==
 
 ===Introduction===
 
@@ -8,70 +8,48 @@ To Install:
 Follow the installation document "Installation Guide.doc" at http://code.google.com/p/firewatir/
   
 ===How To Use===
-# Install ruby from http://ruby-lang.org
-# Download FireWatir and other installables from "http://code.google.com/p/firewatir/" and follow the "Installation Guide.doc".
-# On windows and Linux, its been tested with firefox version  1.5, 1.5.0.4, 1.5.0.7, 2.0 and 2.0.0.1.
-# This has also been tested using Ruby ruby 1.8.2 and ruby 1.8.5 using  Windows 2003 server Enterprise Edition and XP Professional.
-# Check out the mail lists at "http://groups.google.co.in/group/firewatir" to discuss all issues the and refre the documentation for firewatir.
+  # Install ruby from http://ruby-lang.org
+  # Download FireWatir and other installables from "http://code.google.com/p/firewatir/" and follow the "Installation Guide.doc".
+  # On Windows and Linux, its been tested with firefox version  1.5, 1.5.0.4, 1.5.0.7, 2.0 and 2.0.0.1.
+  # This has also been tested using Ruby ruby 1.8.2 and ruby 1.8.5 using  Windows 2003 server Enterprise Edition and XP Professional.
+  # Check out the mailing list at "http://groups.google.co.in/group/firewatir" to discuss all issues the and refre the documentation for firewatir.
    
 Unit Tests:
-# Run the unittests in a cmd shell. Go to the dir where you installed it and then type 'ruby unittests/mozilla_all_tests.rb'.
-# See the "Installation Guide.doc", if you are having problems with security blocking.
+  # Run the unittests in a cmd shell. Go to the dir where you installed it and then type 'ruby unittests/mozilla_all_tests.rb'.
+  # See the "Installation Guide.doc", if you are having problems with security blocking.
 
 ===Features in 1.0===
+{{{
 Typical usage:
-include the controller
+#include the controller
 require "firewatir"
 
-go to the page you want to test
+#go to the page you want to test
 ff = FireWatir::Firefox.start("http://myserver/mypage")
-enter "Angrez" into an input field named "username"
+#enter "Angrez" into an input field named "username"
 ff.text_field(:name, "username").set("Angrez")
 
-enter "Ruby Co" into input field with id "company_ID"
+#enter "Ruby Co" into input field with id "company_ID"
 ff.text_field(:id, "company_ID").set("Ruby Co")
 
-click on a link that has "green" somewhere in the text that is displayed
-to the user, using a regular expression
+#click on a link that has "green" somewhere in the text that is displayed to the user, using a regular expression
 ff.link(:text, /green/)
 
-click button that has a caption of "Cancel"
+#click button that has a caption of "Cancel"
 ff.button(:value, "Cancel").click
-
+}}}
 FireWatir allows your script to read and interact with HTML objects--HTML tags
 and their attributes and contents.
    
 The ways that are available to identify an html object depend upon the object type, but include
-   :id           used for an object that has an ID attribute -- this is the best way!
-   :name         used for an object that has a name attribute. 
-   :value        value of text fields, captions of buttons 
-   :index        finds the nth object of the specified type - eg button(:index , 2) finds the second button. This is 1 based. <br>
-   :beforeText   finds the object immeditaley before the specified text. Doesnt work if the text is in a table cell
-   :afterText    finds the object immeditaley after the specified text. Doesnt work if the text is in a table cell
+  * :id           used for an object that has an ID attribute -- this is the best way
+  * :name         used for an object that has a name attribute. 
+  * :value        value of text fields, captions of buttons 
+  * :index        finds the nth object of the specified type - eg button(:index , 2) finds the second button. This is 1 based. <br>
+  * :beforeText   finds the object immeditaley before the specified text. Doesnt work if the text is in a table cell
+  * :afterText    finds the object immeditaley after the specified text. Doesnt work if the text is in a table cell
 
-The objects that are currently supported include
-   Button
-   Radio
-   CheckBox
-   TextField (Including TextArea and Password)
-   Hidden
-   SelectList
-   Label
-   Span
-   Div
-   P
-   Link
-   Table 
-   Image
-
-===Command line options===
-  -b  (background)   Run Internet Explorer invisible
-  -f  (fast)         Run tests very fast
-  -x  (spinner)      Add a spinner that displays when pages are waiting to be loaded.
-  
-Note that if you also use test/unit, you will need to require 'firewatir' first to avoid conflicts with its command line switches.
-
-Support for _javascript_ pop-ups. This is using now not using the third party dll. 
+Support for _javascript_ pop-ups. This is now not using the third party dll. 
 
 ===Future plans===
 
@@ -83,34 +61,22 @@ Support for _javascript_ pop-ups. This is using now not using the third party dl
 #Thanks for your ideas and support!
 
 ===License===
-  ---------------------------------------------------------------------------
-  Copyright (c) 2006-2007, Angrez Singh and Amit Garde.
-  All rights reserved.
+---------------------------------------------------------------------------
+Copyright (c) 2006-2007, Angrez Singh and Amit Garde.
+All rights reserved.
   
-  Redistribution and use in source and binary forms, with or without
-  modification, are permitted provided that the following conditions are met:
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+ 
+  # Redistributions of source code must retain the above copyright notice,this list of conditions and the following disclaimer.
+  # Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+  # Neither the names Angrez Singh, Amit Garde nor the names of contributors to this software may be used to endorse or promote products derived from this software without specific prior written permission.
   
-  1. Redistributions of source code must retain the above copyright notice,
-  this list of conditions and the following disclaimer.
-  
-  2. Redistributions in binary form must reproduce the above copyright
-  notice, this list of conditions and the following disclaimer in the
-  documentation and/or other materials provided with the distribution.
-  
-  3. Neither the names Paul Rogers, Bret Pettichord nor the names of contributors to
-  this software may be used to endorse or promote products derived from this
-  software without specific prior written permission.
-  
-  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ``AS
-  IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
-  THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
-  PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDERS OR
-  CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-  EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
-  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
-  OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
-  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
-  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
-  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-  --------------------------------------------------------------------------
-  (based on BSD Open Source License)
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDERS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+--------------------------------------------------------------------------
+(based on BSD Open Source License)
+
+
+
+
+
