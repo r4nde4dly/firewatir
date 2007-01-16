@@ -1,49 +1,48 @@
 #summary One-sentence summary of this page.
 
-= Introduction =
+Introduction:
 
 This is FireWatir Web Application Testing In Ruby using Firefox browser. 
 
-= To Install = 
+To Install: 
 Follow the installation document "Installation Guide.doc" at http://code.google.com/p/firewatir/
   
-= How To Use =
+How To Use:
 #Install ruby from http://ruby-lang.org
 #Download FireWatir and other installables from "http://code.google.com/p/firewatir/" and follow the "Installation Guide.doc".
 #On windows and Linux, its been tested with firefox version  1.5, 1.5.0.4, 1.5.0.7, 2.0 and 2.0.0.1.
 #This has also been tested using Ruby ruby 1.8.2 and ruby 1.8.5 using  Windows 2003 server Enterprise Edition and XP Professional.
 #Check out the mail lists at "http://groups.google.co.in/group/firewatir" to discuss all issues the and refre the documentation for firewatir.
    
-= Unit Tests =
+Unit Tests:
 #Run the unittests in a cmd shell. Go to the dir where you installed it and then type 'ruby unittests/mozilla_all_tests.rb'.
 #See the "Installation Guide.doc", if you are having problems with security blocking.
 
-= Features in 1.0 =
+Features in 1.0:
 
-= Typical usage = 
-    "#" include the controller
-    require "firewatir"
+Typical usage:
+include the controller
+require "firewatir"
 
-    # go to the page you want to test
-    ff = FireWatir::Firefox.start("http://myserver/mypage")
+go to the page you want to test
+ff = FireWatir::Firefox.start("http://myserver/mypage")
+enter "Angrez" into an input field named "username"
+ff.text_field(:name, "username").set("Angrez")
 
-    # enter "Angrez" into an input field named "username"
-    ff.text_field(:name, "username").set("Angrez")
+enter "Ruby Co" into input field with id "company_ID"
+ff.text_field(:id, "company_ID").set("Ruby Co")
 
-    # enter "Ruby Co" into input field with id "company_ID"
-    ff.text_field(:id, "company_ID").set("Ruby Co")
+click on a link that has "green" somewhere in the text that is displayed
+to the user, using a regular expression
+ff.link(:text, /green/)
 
-    # click on a link that has "green" somewhere in the text that is displayed
-    # to the user, using a regular expression
-    ff.link(:text, /green/)
+click button that has a caption of "Cancel"
+ff.button(:value, "Cancel").click
 
-    # click button that has a caption of "Cancel"
-    ff.button(:value, "Cancel").click
-
-   FireWatir allows your script to read and interact with HTML objects--HTML tags
-   and their attributes and contents.
+FireWatir allows your script to read and interact with HTML objects--HTML tags
+and their attributes and contents.
    
-  The ways that are available to identify an html object depend upon the object type, but include
+The ways that are available to identify an html object depend upon the object type, but include
    :id           used for an object that has an ID attribute -- this is the best way!
    :name         used for an object that has a name attribute. 
    :value        value of text fields, captions of buttons 
@@ -66,7 +65,6 @@ The objects that are currently supported include
    Table 
    Image
 
-
 Command line options:
 
   -b  (background)   Run Internet Explorer invisible
@@ -79,13 +77,11 @@ Support for _javascript_ pop-ups. This is using now not using the third party dl
 
 Future plans:
 
-Contacts: 
-Contributors:
-Acknowledgements:
+#Contacts: 
+#Contributors:
+#Acknowledgements:
 
 #Thanks for your ideas and support!
-
-= Details =
 
 =License=
   ---------------------------------------------------------------------------
