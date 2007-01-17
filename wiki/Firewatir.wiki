@@ -9,32 +9,32 @@ scripts. This works with Firefox 1.5 and above.
 
 Follow the Installation guide document. Get he document [http://code.google.com/p/firewatir/downloads/list here].
 You can start writing script as shown below, the script opens yahoo mail and sign-in using the credentials you have given and sign-out.
+{{{
+ #Include the FireWatir file. 
+ require 'firewatir'
 
-#Include the FireWatir file 
-require 'firewatir'
+ #include the FireWatir Module.
+ include FireWatir
 
-#include the FireWatir Module
-include FireWatir
+ ff=Firefox.new
+ #Open yahoo mail. 
+ ff.goto("http://mail.yahoo.com")
 
-ff=Firefox.new
-# Open yahoo mail 
-ff.goto("http://mail.yahoo.com")
+ #Put your user name. 
+ ff.text_field(:name,"login").set("User_Name")
 
-#Put your user name 
-ff.text_field(:name,"login").set("User_Name")
+ #Put your password.
+ ff.text_field(:name,"passwd").set("Password")
 
-#Put your password
-ff.text_field(:name,"passwd").set("Password")
+ #Click Sign In button.
+ ff.button(:value,"Sign In").click
 
-#Click Sign In button
-ff.button(:value,"Sign In").click
+ #Click Sign Out button.
+ ff.link(:text, "Sign Out").click
 
-#Click Sign Out button
-ff.link(:text, "Sign Out").click
-
-#Close the browser
-ff.close
-
+ #Close the browser.
+ ff.close
+}}}
 *Where do I get it?*
 
 Like other ruby projects FireWatir also has a gem. You can get the gem [http://code.google.com/p/firewatir/downloads/list here].
@@ -142,4 +142,6 @@ option. For e.g.: "C:\Program Files\Firefox\firefox.exe -jssh".
 localhost 9997 if you are telnet-ing from the same machine on which your FireFox instance 
 is running, or telnet testhost 9997 where testhost is the hostname of the remote machine 
 on which FireFox is running).
+
+
 
