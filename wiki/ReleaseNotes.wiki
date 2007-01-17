@@ -1,7 +1,7 @@
 ===FireWatir version 1.0===
 
 ==Introduction==
-This document will enlist all the features released with this version and planned features and enhancements.
+This document enlists all the features released with this version and planned features and enhancements in near future.
 
 ==Features in 1.0==
 
@@ -18,7 +18,7 @@ Along with the main endeavor of FireWatir i.e the scripts written for IE on wind
  # Concurrent test cases can be run on multiple Firefox instances existing at a time.
  # Logger that will log all the actions extensively.
  # Iterators for all the HTML elements. For e.g.: tables, labels, divs, spans, ps etc.
- # Implement to_s method for each element separately.
+ # Implement to_s method for each element.
  # Start Firefox browser with version configured by user.
  # Implement support for TableBody element.
  # Tabbed browser support (if feasible)
@@ -27,6 +27,7 @@ Along with the main endeavor of FireWatir i.e the scripts written for IE on wind
  # For now more than one instance of Firefox executing the test cases cannot be run as the JSSh works only at one port shared across all the instances of Firefox browser at a time.
  # Modal Dialog is not supported on Firefox, so it is not supported by FireWatir as well. Need to check if there are any alternatives methods available to support modal dialog on Firefox browser.
  # For an image displayed on the screen, one cannot get its FileSize, FileCreatedDate.
+
 
 
 
