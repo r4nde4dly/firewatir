@@ -10,6 +10,7 @@ Along with the main endeavor of FireWatir i.e the scripts written for IE on wind
  # Platform independent, as there is nothing being used that is platform dependent. This enable FireWatir to work on any platform with Firefox browser and the JSSh extension installed. It's been tested on Windows Server 2003 Enterprise Edition, Windows XP Professional SP2. It has not yet been tested on Linux and Mac, but it should work. The gems will be released after the testing.
  # Script can be run on any remote machine, which means any machine connected to your network.
  # FireWatir is tested with ruby version 1.8.2 and 1.8.4.
+ # Tested on Firefox version 1.5, 1.5.0.4, 1.5.0.7 , 2.0 and 2.0.0.1.
  # For handling JavaScript popups no third party tool or dll is used, and the window need not to be a active window. Popups are handled in such a way that the action of clicking the popup buttons remains the same. But, the user experience differs in way that the popups are not visible to the users.
  # Firefox has built in support for XPath, so it's faster to get an element by XPath on Firefox.
  # Firefox browser is more compliant with w3c standards. [http://www.xulplanet.com/references/elemref/ Click here] for information on elements their methods and properties.
@@ -28,7 +29,6 @@ Along with the main endeavor of FireWatir i.e the scripts written for IE on wind
  # For now more than one instance of Firefox executing the test cases cannot be run as the JSSh works only at one port shared across all the instances of Firefox browser at a time.
  # Modal Dialog is not supported on Firefox, so it is not supported by FireWatir as well. Need to check if there are any alternatives methods available to support modal dialog on Firefox browser.
  # For an image displayed on the screen, one cannot get its FileSize, FileCreatedDate.
-
 
 
 
