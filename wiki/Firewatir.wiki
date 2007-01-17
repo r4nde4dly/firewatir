@@ -7,7 +7,7 @@ scripts. This works with Firefox 1.5 and above.
 
 *How do I use it?*
 
-Follow the Installation guide document. Get he document [http://code.google.com/p/firewatir/downloads/list here].
+Follow the Installation guide document. Get the document [http://code.google.com/p/firewatir/downloads/list here].
 You can start writing script as shown below, the script opens yahoo mail and sign-in using the credentials you have given and sign-out.
 {{{
  #Include the FireWatir file. 
@@ -142,6 +142,5 @@ option. For e.g.: "C:\Program Files\Firefox\firefox.exe -jssh".
 localhost 9997 if you are telnet-ing from the same machine on which your FireFox instance 
 is running, or telnet testhost 9997 where testhost is the hostname of the remote machine 
 on which FireFox is running).
-
 
 
