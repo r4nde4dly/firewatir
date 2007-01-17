@@ -7,7 +7,7 @@ scripts. This works with Firefox 1.5 and above.
 
 *How do I use it?*
 
-To be done.
+Follow the Installation guide document. Get he document [http://code.google.com/p/firewatir/downloads/list here].
 
 *Where do I get it?*
 
