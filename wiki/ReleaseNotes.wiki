@@ -1,10 +1,10 @@
 #labels Featured,Phase-Support,Phase-Design
-===FireWatir version 1.0===
+===FireWatir version 1.0.1===
 
 ==Introduction==
 This document enlists all the features released with this version and planned features and enhancements in near future.
 
-==Features in 1.0==
+==Features in 1.0.1==
 
 Along with the main endeavor of FireWatir i.e the scripts written for IE on windows platform can be used with minimal changes on Firefox browser, FireWatir comes with following additional features
  # Platform independent, as there is nothing being used that is platform dependent. This enable FireWatir to work on any platform with Firefox browser and the JSSh extension installed. It's been tested on Windows Server 2003 Enterprise Edition, Windows XP Professional SP2. It has not yet been tested on Linux and Mac, but it should work. The gems will be released after the testing.
@@ -34,4 +34,3 @@ Along with the main endeavor of FireWatir i.e the scripts written for IE on wind
  # For now more than one instance of Firefox executing the test cases cannot be run as the JSSh works only at one port shared across all the instances of Firefox browser at a time.
  # Modal Dialog is not supported on Firefox, so it is not supported by FireWatir as well. Need to check if there are any alternatives methods available to support modal dialog on Firefox browser.
  # For an image displayed on the screen, one cannot get its FileSize, FileCreatedDate.
-
