@@ -1,3 +1,4 @@
+#labels Featured,Phase-Support,Phase-Design
 ===FireWatir version 1.0===
 
 ==Introduction==
@@ -27,7 +28,6 @@ Along with the main endeavor of FireWatir i.e the scripts written for IE on wind
  # For now more than one instance of Firefox executing the test cases cannot be run as the JSSh works only at one port shared across all the instances of Firefox browser at a time.
  # Modal Dialog is not supported on Firefox, so it is not supported by FireWatir as well. Need to check if there are any alternatives methods available to support modal dialog on Firefox browser.
  # For an image displayed on the screen, one cannot get its FileSize, FileCreatedDate.
-
 
 
 
