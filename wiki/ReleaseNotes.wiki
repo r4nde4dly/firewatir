@@ -5,28 +5,29 @@ This document will enlist all the features released with this version and planne
 
 ==Features in 1.0==
 
-Along with the main endeavor of FireWatir i.e the scripts written for IE on windows platform can be used with minimal changes on Firefox browser, FireWatir comes with following additional features.
-# Platform independent, as there is nothing being used that is platform dependent. This enable FireWatir to work on any platform with Firefox browser and the JSSh extension installed. Its been tested on Windows Server 2003 Enterprise Edition, Windows XP Professional. It has not yet been tested on Linux and Mac, but it should work. The gems will be released after the testing.
-# Script can be run on any remote machine, which means any machine connected to your network.
-# FireWatir is tested with ruby version 1.8.2 and 1.8.4.
-# For handling JavaScript popups no third party tool or dll is used, and the window need not to be a active window. Popups are handled in such a way that the action of clicking the popup buttons remains the same. But, the user experience differs in way that the popups are not visible to the users.
-# Firefox has built in support for XPath, so its faster to get an element by XPath on Firefox.
-# Firefox browser is more compliant with w3c standards. [http://www.xulplanet.com/references/elemref/ Click here] for information on elements their methods and properties.
-# It’s visibly faster when compared to Watir.
+Along with the main endeavor of FireWatir i.e the scripts written for IE on windows platform can be used with minimal changes on Firefox browser, FireWatir comes with following additional features
+ # Platform independent, as there is nothing being used that is platform dependent. This enable FireWatir to work on any platform with Firefox browser and the JSSh extension installed. Its been tested on Windows Server 2003 Enterprise Edition, Windows XP Professional. It has not yet been tested on Linux and Mac, but it should work. The gems will be released after the testing.
+ # Script can be run on any remote machine, which means any machine connected to your network.
+ # FireWatir is tested with ruby version 1.8.2 and 1.8.4.
+ # For handling JavaScript popups no third party tool or dll is used, and the window need not to be a active window. Popups are handled in such a way that the action of clicking the popup buttons remains the same. But, the user experience differs in way that the popups are not visible to the users.
+ # Firefox has built in support for XPath, so its faster to get an element by XPath on Firefox.
+ # Firefox browser is more compliant with w3c standards. [http://www.xulplanet.com/references/elemref/ Click here] for information on elements their methods and properties.
+ # It’s visibly faster when compared to Watir.
 
 ==Future Plans==
-# Concurrent test cases can be run on multiple Firefox instances existing at a time.
-# Logger that will log all the actions extensively.
-# Iterators for all the HTML elements. For e.g.: tables, labels, divs, spans, ps etc.
-# Implement to_s method for each element separately.
-# Start Firefox browser with version configured by user.
-# Implement support for TableBody element.
-# Tabbed browser support (if feasible)
+ # Concurrent test cases can be run on multiple Firefox instances existing at a time.
+ # Logger that will log all the actions extensively.
+ # Iterators for all the HTML elements. For e.g.: tables, labels, divs, spans, ps etc.
+ # Implement to_s method for each element separately.
+ # Start Firefox browser with version configured by user.
+ # Implement support for TableBody element.
+ # Tabbed browser support (if feasible)
 
 ==Known Issues==
-# For now more than one instance of Firefox executing the test cases cannot be run as the JSSh works only at one port shared across all the instances of Firefox browser at a time.
-# Modal Dialog is not supported on Firefox, so it is not supported by FireWatir as well. Need to check if there are any alternatives methods available to support modal dialog on Firefox browser.
-# For an image displayed on the screen, one cannot get its FileSize, FileCreatedDate.
+ # For now more than one instance of Firefox executing the test cases cannot be run as the JSSh works only at one port shared across all the instances of Firefox browser at a time.
+ # Modal Dialog is not supported on Firefox, so it is not supported by FireWatir as well. Need to check if there are any alternatives methods available to support modal dialog on Firefox browser.
+ # For an image displayed on the screen, one cannot get its FileSize, FileCreatedDate.
+
 
 
 
