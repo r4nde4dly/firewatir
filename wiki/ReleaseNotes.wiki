@@ -15,7 +15,7 @@ Along with the main endeavor of FireWatir i.e the scripts written for IE on wind
  # Firefox has built in support for XPath, so it's faster to get an element by XPath on Firefox.
  # Firefox browser is more compliant with w3c standards. [http://www.xulplanet.com/references/elemref/ Click here] for information on elements their methods and properties.
  # It’s visibly faster when compared to Watir.
- # Firefox will be started automatically for Windows. No required to start Firefox manually, currently its only for windows.
+ # Firefox will be started automatically for Windows when test script is exceuted. Currently it works only on Windows.
  # Has support for Frames and IFrames.
  # Added documentation, check  gems/docs.
 
@@ -27,11 +27,11 @@ Along with the main endeavor of FireWatir i.e the scripts written for IE on wind
  # Implement to_s method for each element.
  # Start Firefox browser with version configured by user.
  # Implement support for TableBody element.
+ # Javascript popup support for open, save, cancel popup, when a file is doenloaded.
  # Tabbed browser support (if feasible)
 
 ==Known Issues==
  # For now more than one instance of Firefox executing the test cases cannot be run as the JSSh works only at one port shared across all the instances of Firefox browser at a time.
  # Modal Dialog is not supported on Firefox, so it is not supported by FireWatir as well. Need to check if there are any alternatives methods available to support modal dialog on Firefox browser.
  # For an image displayed on the screen, one cannot get its FileSize, FileCreatedDate.
-
 
