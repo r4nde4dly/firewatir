@@ -1,80 +1,32 @@
-==Release notes for Firewatir version 1.0==
+===FireWatir version 1.0===
 
-===Introduction===
+==Introduction==
+This document will enlist all the features released with this version and planned features and enhancements.
 
-This is FireWatir Web Application Testing In Ruby using Firefox browser. 
+==Features in 1.0==
 
-To Install: 
-Follow the installation document "Installation Guide.doc" at http://code.google.com/p/firewatir/
-  
-===How To Use===
-  # Install ruby from http://ruby-lang.org
-  # Download FireWatir and other installables from "http://code.google.com/p/firewatir/" and follow the "Installation Guide.doc".
-  # On Windows and Linux, its been tested with firefox version  1.5, 1.5.0.4, 1.5.0.7, 2.0 and 2.0.0.1.
-  # This has also been tested using Ruby ruby 1.8.2 and ruby 1.8.5 using  Windows 2003 server Enterprise Edition and XP Professional.
-  # Check out the mailing list at "http://groups.google.co.in/group/firewatir" to discuss all issues the and refre the documentation for firewatir.
-   
-Unit Tests:
-  # Run the unittests in a cmd shell. Go to the dir where you installed it and then type 'ruby unittests/mozilla_all_tests.rb'.
-  # See the "Installation Guide.doc", if you are having problems with security blocking.
+Along with the main endeavor of FireWatir i.e the scripts written for IE on windows platform can be used with minimal changes on Firefox browser, FireWatir comes with following additional features.
+# Platform independent, as there is nothing being used that is platform dependent. This enable FireWatir to work on any platform with Firefox browser and the JSSh extension installed. Its been tested on Windows Server 2003 Enterprise Edition, Windows XP Professional. It has not yet been tested on Linux and Mac, but it should work. The gems will be released after the testing.
+# Script can be run on any remote machine, which means any machine connected to your network.
+# FireWatir is tested with ruby version 1.8.2 and 1.8.4.
+# For handling JavaScript popups no third party tool or dll is used, and the window need not to be a active window. Popups are handled in such a way that the action of clicking the popup buttons remains the same. But, the user experience differs in way that the popups are not visible to the users.
+# Firefox has built in support for XPath, so its faster to get an element by XPath on Firefox.
+# Firefox browser is more compliant with w3c standards. [http://www.xulplanet.com/references/elemref/ Click here] for information on elements their methods and properties.
+# It’s visibly faster when compared to Watir.
 
-===Features in 1.0===
-{{{
-Typical usage:
-#include the controller
-require "firewatir"
+==Future Plans==
+# Concurrent test cases can be run on multiple Firefox instances existing at a time.
+# Logger that will log all the actions extensively.
+# Iterators for all the HTML elements. For e.g.: tables, labels, divs, spans, ps etc.
+# Implement to_s method for each element separately.
+# Start Firefox browser with version configured by user.
+# Implement support for TableBody element.
+# Tabbed browser support (if feasible)
 
-#go to the page you want to test
-ff = FireWatir::Firefox.start("http://myserver/mypage")
-#enter "Angrez" into an input field named "username"
-ff.text_field(:name, "username").set("Angrez")
-
-#enter "Ruby Co" into input field with id "company_ID"
-ff.text_field(:id, "company_ID").set("Ruby Co")
-
-#click on a link that has "green" somewhere in the text that is displayed to the user, using a regular expression
-ff.link(:text, /green/)
-
-#click button that has a caption of "Cancel"
-ff.button(:value, "Cancel").click
-}}}
-FireWatir allows your script to read and interact with HTML objects--HTML tags
-and their attributes and contents.
-   
-The ways that are available to identify an html object depend upon the object type, but include
-  * :id           used for an object that has an ID attribute -- this is the best way
-  * :name         used for an object that has a name attribute. 
-  * :value        value of text fields, captions of buttons 
-  * :index        finds the nth object of the specified type - eg button(:index , 2) finds the second button. This is 1 based. <br>
-  * :beforeText   finds the object immeditaley before the specified text. Doesnt work if the text is in a table cell
-  * :afterText    finds the object immeditaley after the specified text. Doesnt work if the text is in a table cell
-
-Support for _javascript_ pop-ups. This is now not using the third party dll. 
-
-===Future plans===
-
-
-#Contacts: 
-#Contributors:
-#Acknowledgements:
-
-#Thanks for your ideas and support!
-
-===License===
----------------------------------------------------------------------------
-Copyright (c) 2006-2007, Angrez Singh and Amit Garde.
-All rights reserved.
-  
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are met:
- 
-  # Redistributions of source code must retain the above copyright notice,this list of conditions and the following disclaimer.
-  # Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
-  # Neither the names Angrez Singh, Amit Garde nor the names of contributors to this software may be used to endorse or promote products derived from this software without specific prior written permission.
-  
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDERS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
---------------------------------------------------------------------------
-(based on BSD Open Source License)
+==Known Issues==
+# For now more than one instance of Firefox executing the test cases cannot be run as the JSSh works only at one port shared across all the instances of Firefox browser at a time.
+# Modal Dialog is not supported on Firefox, so it is not supported by FireWatir as well. Need to check if there are any alternatives methods available to support modal dialog on Firefox browser.
+# For an image displayed on the screen, one cannot get its FileSize, FileCreatedDate.
 
 
 
