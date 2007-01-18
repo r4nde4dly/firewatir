@@ -127,7 +127,7 @@ class. The definition of 'Element' class comes from '_MozillaBaseElement.rb_'.
 
 *Installation*
 
-For installation read the [http://code.google.com/p/firewatir/downloads/list/|Installation Document].
+For installation read the [http://code.google.com/p/firewatir/downloads/list/ Installation Document].
 
 *Installation Gotchas*
 Coming Soon
