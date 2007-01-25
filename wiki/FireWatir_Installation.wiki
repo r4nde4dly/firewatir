@@ -1,0 +1,13 @@
+How to go about setting up fireWatir on different platforms.
+= Introduction =
+This page will describe steps to follow while installing FireWatir on various OS.
+
+http://people.mozilla.com/~davel/jssh/
+=== Windows ===
+
+=== Windows ===
+=== Linux ===
+=== Mac OSX ===
+
+
+
