@@ -2,11 +2,32 @@ How to go about setting up fireWatir on different platforms.
 = Introduction =
 This page will describe steps to follow while installing FireWatir on various OS.
 
-http://people.mozilla.com/~davel/jssh/
+Steps commpn to all the platforms are:
+
+ # Install Ruby from Download ruby from http://www.ruby-lang.org/en/downloads/
+ # Install Firefox browser and its Jssh extension.
+ # Allow popups for Firefox.
 
 ==== Windows ====
+ # Download the Ruby one click installer from http://rubyforge.org/frs/?group_id=167&release_id=9267
+ # Download FireFox browser (from miziall site) and .xpi file from  http://code.google.com/p/firewatir/doenloads/list 
+ # Download the FireWatir gem from http://code.google.com/p/firewatir/downloads/list 
+
+
 ==== Linux ====
+ # Download ruby from http://www.ruby-lang.org/en/downloads/
+ # Download the correct firefox extension from http://people.mozilla.com/~davel/jssh/
+ # Download the FireWatir gem from http://code.google.com/p/firewatir/downloads/list 
+
 ==== Mac OSX ====
+ # Download ruby from http://www.ruby-lang.org/en/downloads/
+ # Download the correct firefox extension from http://people.mozilla.com/~davel/jssh/
+ # Download the FireWatir gem from http://code.google.com/p/firewatir/downloads/list 
+ # Install FireWatire going to command prompt and changing directory where the gem is downloaded and tyoing a command
+ >gem install firewatir-win32.gem
+  gem install 
+ 
+
 
 
 
