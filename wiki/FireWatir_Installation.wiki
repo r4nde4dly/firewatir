@@ -12,21 +12,24 @@ Steps commpn to all the platforms are:
  # Download the Ruby one click installer from http://rubyforge.org/frs/?group_id=167&release_id=9267
  # Download FireFox browser (from miziall site) and .xpi file from  http://code.google.com/p/firewatir/doenloads/list 
  # Download the FireWatir gem from http://code.google.com/p/firewatir/downloads/list 
+ # Install FireWatire going to command prompt and changing directory where the gem is downloaded by typing a command
+ >gem install firewatir-1.0.1-mswin32.gem
 
 
 ==== Linux ====
  # Download ruby from http://www.ruby-lang.org/en/downloads/
  # Download the correct firefox extension from http://people.mozilla.com/~davel/jssh/
  # Download the FireWatir gem from http://code.google.com/p/firewatir/downloads/list 
+ # Install FireWatire going to command prompt and changing directory where the gem is downloaded and typing a command
+ >gem install firewatir-1.0.1-mswin32.gem
 
 ==== Mac OSX ====
  # Download ruby from http://www.ruby-lang.org/en/downloads/
  # Download the correct firefox extension from http://people.mozilla.com/~davel/jssh/
  # Download the FireWatir gem from http://code.google.com/p/firewatir/downloads/list 
- # Install FireWatire going to command prompt and changing directory where the gem is downloaded and tyoing a command
- >gem install firewatir-win32.gem
-  gem install 
- 
+ # Install FireWatire going to command prompt and changing directory where the gem is downloaded and typing a command
+ >gem install firewatir-1.0.1-mswin32.gem
+
 
 
 
