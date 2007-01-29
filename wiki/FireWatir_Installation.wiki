@@ -8,7 +8,7 @@ Steps commpn to all the platforms are:
  # Install Firefox browser and its Jssh extension.
  # Allow popups for Firefox.
  # Run the unittests written to test FireWatir wroking. The Unittests are in a folder where FireWatir is installed. On the command prompt go to the FireWatir installation directory under unittests type 
-\unittests>ruby mozilla_all_tests.rb 
+ \unittests>ruby mozilla_all_tests.rb 
 
 ==== Windows ====
  # Download the Ruby one click installer from http://rubyforge.org/frs/?group_id=167&release_id=9267
@@ -31,7 +31,6 @@ Steps commpn to all the platforms are:
  # Download the FireWatir gem from http://code.google.com/p/firewatir/downloads/list 
  # Install FireWatire going to command prompt and changing directory where the gem is downloaded and typing a command
  >gem install firewatir-1.0.1-mswin32.gem
-
 
 
 
