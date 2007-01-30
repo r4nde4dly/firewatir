@@ -14,18 +14,15 @@ Steps common to all the platforms are:
  # Download the Ruby one click installer from http://rubyforge.org/frs/?group_id=167&release_id=9267
  # Download Firefox browser from http://www.mozilla.com and install
  # Download .XPI file from http://code.google.com/p/firewatir/downloads/list 
-  a. Open Firefox browser.
-  b.	From File menu select Open File option.
-  c.	Navigate to the path where “JSSh XPI” folder is located. Select ‘XPI’ inside this folder and click open.
-  d. Wait till a dialog appear stating that do you want to install this extension. Click install.
-  e. The extension will not show up in the installed extensions list. For checking the installation of extension; follow step f and g.
-  f. Close Firefox. Restart it from command prompt using “[Firefox installation directory]/firefox.exe -jssh”. Make sure you give “-jssh” as parameter other wise Firefox will not start JSSh shell.
-  g. To check if JSSh is listening on port 9997 run command “telnet localhost 9997” from command prompt.
- 
- # Download the FireWatir gem from http://code.google.com/p/firewatir/downloads/list 
- # Install FireWatir going to command prompt and changing directory where the gem is downloaded by typing a command
+   * Open Firefox browser.
+   * From File menu select Open File option.
+   * Navigate to the path where the downloaded .XPI file is located. Select the .XPI file click open.
+   * Wait till a dialog appear stating that do you want to install this extension. Click install.
+   * The extension will not show up in the installed extensions list. For checking the installation of extension; follow steps below
+   * Close Firefox. Restart it from command prompt using “[Firefox installation directory]/firefox.exe -jssh”. Make sure you give “-jssh” as parameter other wise Firefox will not start JSSh shell.
+   * To check if JSSh is listening on port 9997 run command “telnet localhost 9997” from command prompt.
+ # Download the FireWatir gem from http://code.google.com/p/firewatir/downloads/list. Install FireWatir going to command prompt and changing directory where the gem is downloaded and type command
  >gem install firewatir-1.0.1-mswin32.gem
-
 
 ==== Linux ====
  # Download ruby from http://www.ruby-lang.org/en/downloads/
