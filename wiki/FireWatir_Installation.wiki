@@ -26,7 +26,7 @@ Steps common to all the platforms are:
 
 ==== Linux ====
  # Download ruby from http://www.ruby-lang.org/en/downloads/
- # Download Firefox from http://releases.mozilla.org/pub/mozilla.org/firefox/releases/1.5/ and install using the guidelines given here http://www.mozilla.com/en-US/firefox/releases/1.5.html#install
+ # Download Firefox from http://www.mozilla.com/en-US/firefox/all.html and install using the guidelines given in the reselase notes at http://www.mozilla.com/en-US/firefox/releases/(click on version of Firefox you have downloaded).
  # Download the correct Firefox extension from http://people.mozilla.com/~davel/jssh/ and install.
  # Download the FireWatir gem from http://code.google.com/p/firewatir/downloads/list 
  # Install FireWatir going to command prompt and changing directory where the gem is downloaded and typing a command
@@ -34,8 +34,8 @@ Steps common to all the platforms are:
 
 ==== Mac OSX ====
  # Download ruby from http://www.ruby-lang.org/en/downloads/
- # Download Firefox from http://releases.mozilla.org/pub/mozilla.org/firefox/releases/1.5/ and install using the guidelines given here http://www.mozilla.com/en-US/firefox/releases/1.5.html#install
+ # Download Firefox from http://www.mozilla.com/en-US/firefox/all.html and install using the guidelines given in the reselase notes at http://www.mozilla.com/en-US/firefox/releases/(click on version of Firefox you have downloaded).
  # Download the correct Firefox extension from http://people.mozilla.com/~davel/jssh/ and install. 
- # Download the FireWatir gem from http://code.google.com/p/firewatir/downloads/list 
+ # Download Firefox from http://www.mozilla.com/en-US/firefox/all.html and install using the guidelines given in the reselase notes at http://www.mozilla.com/en-US/firefox/releases/(click on version of Firefox you have downloaded).
  # Install FireWatir going to command prompt and changing directory where the gem is downloaded and typing a command
  >gem install firewatir-1.0.1-mswin32.gem
