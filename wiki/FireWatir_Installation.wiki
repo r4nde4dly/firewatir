@@ -1,36 +1,33 @@
 How to go about setting up FireWatir on different platforms.
 = Introduction =
-This page will describe steps to follow while installing FireWatir on various OS.
+This page will describe steps to be followed while installing FireWatir on various OS.
 
-Steps commpn to all the platforms are:
+Steps common to all the platforms are:
 
  # Install Ruby from Download ruby from http://www.ruby-lang.org/en/downloads/
- # Install Firefox browser and its Jssh extension.
- # Allow popups for Firefox.
- # Run the unittests written to test FireWatir wroking. The Unittests are in a folder where FireWatir is installed. On the command prompt go to the FireWatir installation directory under unittests type 
+ # Install Firefox browser and its JSSh extension.
+ # Allow popup for Firefox.
+ # Run the unittests written to test FireWatir working. The Unittests are in a folder where FireWatir is installed. On the command prompt go to the FireWatir installation directory under unittests type 
  \unittests>ruby mozilla_all_tests.rb 
 
 ==== Windows ====
  # Download the Ruby one click installer from http://rubyforge.org/frs/?group_id=167&release_id=9267
- # Download FireFox browser (from miziall site) and .xpi file from  http://code.google.com/p/firewatir/doenloads/list 
+ # Download Firefox browser from http://www.mozilla.com and .xpi file from http://code.google.com/p/firewatir/downloads/list 
  # Download the FireWatir gem from http://code.google.com/p/firewatir/downloads/list 
- # Install FireWatire going to command prompt and changing directory where the gem is downloaded by typing a command
+ # Install FireWatir going to command prompt and changing directory where the gem is downloaded by typing a command
  >gem install firewatir-1.0.1-mswin32.gem
 
 
 ==== Linux ====
  # Download ruby from http://www.ruby-lang.org/en/downloads/
- # Download the correct firefox extension from http://people.mozilla.com/~davel/jssh/
+ # Download the correct Firefox extension from http://people.mozilla.com/~davel/jssh/
  # Download the FireWatir gem from http://code.google.com/p/firewatir/downloads/list 
- # Install FireWatire going to command prompt and changing directory where the gem is downloaded and typing a command
+ # Install FireWatir going to command prompt and changing directory where the gem is downloaded and typing a command
  >gem install firewatir-1.0.1-mswin32.gem
 
 ==== Mac OSX ====
  # Download ruby from http://www.ruby-lang.org/en/downloads/
  # Download the correct firefox extension from http://people.mozilla.com/~davel/jssh/
  # Download the FireWatir gem from http://code.google.com/p/firewatir/downloads/list 
- # Install FireWatire going to command prompt and changing directory where the gem is downloaded and typing a command
+ # Install FireWatir going to command prompt and changing directory where the gem is downloaded and typing a command
  >gem install firewatir-1.0.1-mswin32.gem
-
-
-
