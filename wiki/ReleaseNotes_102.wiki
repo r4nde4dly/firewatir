@@ -14,7 +14,8 @@ Following is the list of new features/fixes added to FireWatir.
  # Fixed bugs 1
    # FireWatir::Firefox.html doesn't exists, by cdc@cyphers.dns2go.com
    # Cannot access button using value when the html is "<button type="submit">Sign In</button>" by Vikash Kumar.
-   # firewatir fails finding link by text when html is "<a href="http://www.test.com"><span class="a">Go Test</span></a>" by Kevin Alsteens.
+   # Firewatir fails finding link by text when html is "<a href="http://www.test.com"><span class="a">Go Test</span></a>" by Kevin Alsteens.
+   # elements_by_path bug by Dan Zwell. 
  # Made it more compatible with scripts written for watir.
  # Added support to wait for Firefox to load the page in case there are redirect on the page that is currently loading.
 
@@ -29,7 +30,6 @@ Following is the list of new features/fixes added to FireWatir.
 ==Known Issues==
  # For now more than one instance of Firefox executing the test cases cannot be run as the JSSh works only at one port shared across all the instances of Firefox browser at a time.
  # For an image displayed on the screen, one cannot get its FileSize, FileCreatedDate.
-
 
 
 
