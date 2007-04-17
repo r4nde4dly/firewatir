@@ -7,23 +7,17 @@ This page lists all he people who have participated in the FireWatir development
 == Details ==
 
   # *Narayan and Team* from ThoughtWorks for suggesting how to handle javascript alert and confirmation popups.
+
   # *Phil* : Find the browser redirect issue.
-
   # *Todd Fisher* : button support patch. 
-
   # *Dan Zwell* : 
      * elements_by_path bug and fix.  
      * Storing object in a variable using irb and the cause of bug.
-
   # *cdc@cyphers.dns2go.com* : FireWatir?::Firefox.html doesn't exists. 
-
-  # *Vikash Kumar* : Cannot access button using value when the html is "<button 
-type="submit">Sign In</button>". 
-
+  # *Vikash Kumar* : Cannot access button using value when the html is "<button type="submit">Sign In</button>". 
   # *Kevin Alsteens* : Firewatir fails finding link by text when html is "<a href="http://www.test.com"><span class="a">Go Test</span></a>". 
 
   
  
-
 
 
