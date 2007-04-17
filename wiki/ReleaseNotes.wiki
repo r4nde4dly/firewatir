@@ -8,17 +8,17 @@ This document enlists all the features released with this version and planned fe
 
 This version addresses issues discovered in the prior release and is more compatible to Watir scripts, thanks to all the users for sharing their experiences with FireWatir.
 This version also includes new features/fixes as follows: 
- # Impelmented to_s for all the elements which returns element specific attributes along with attributes that apply to all the elements.
+ # Implemented to_s for all the elements which returns element specific attributes along with attributes that apply to all the elements.
  # Implemented iterators for all the elements.
  # Implemented show_all_objects.
  # Added support to access 'button' elements. Thanks to patch send by Todd Fisher.
- # Fixed bugs 1
+ # Fixed bugs
    # FireWatir::Firefox.html doesn't exists, by cdc@cyphers.dns2go.com
    # Cannot access button using value when the html is "<button type="submit">Sign In</button>" by Vikash Kumar.
    # Firewatir fails finding link by text when html is "<a href="http://www.test.com"><span class="a">Go Test</span></a>" by Kevin Alsteens.
-   # elements_by_path bug by Dan Zwell. 
+   # elements_by_xpath bug by Dan Zwell. 
+   # JavaScript redirection bug by Phil
  # Made it more compatible with scripts written for watir.
- # Added support to wait for Firefox to load the page in case there is redirect on the page that is currently loading.
  # Code documentation.
 
 ==Future Plans==
