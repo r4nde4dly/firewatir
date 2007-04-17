@@ -22,24 +22,24 @@ Steps common to all the platforms are:
    * Close Firefox. Restart it from command prompt using “[Firefox installation directory]/firefox.exe -jssh”. Make sure you give “-jssh” as parameter other wise Firefox will not start JSSh shell.
    * To check if JSSh is listening on port 9997 run command “telnet localhost 9997” from command prompt.
  # Download the FireWatir gem from http://code.google.com/p/firewatir/downloads/list. Install FireWatir going to command prompt and changing directory where the gem is downloaded and type command
- >gem install firewatir-1.0.1-mswin32.gem
+ >gem install firewatir-1.0.2.gem
 
 ==== Linux ====
  # Download ruby from http://www.ruby-lang.org/en/downloads/
- # Download Firefox from http://www.mozilla.com/en-US/firefox/all.html and install using the guidelines given in the reselase notes at http://www.mozilla.com/en-US/firefox/releases (click on version of Firefox you have downloaded).
- # Download the correct Firefox extension from http://people.mozilla.com/~davel/jssh/ and install.
+ # Download Firefox from http://www.mozilla.com/en-US/firefox/all.html and install using the guidelines given in the release notes at http://www.mozilla.com/en-US/firefox/releases (click on version of Firefox you have downloaded).
+ # Download the correct Firefox extension from http://code.google.com/p/firewatir/downloads/list and install.
  # Download the FireWatir gem from http://code.google.com/p/firewatir/downloads/list 
  # Install FireWatir 
-   * Open a teminal and at command prompt change directory where the gem is downloaded and 
+   * Open a terminal or command prompt change directory where the gem is downloaded and 
    * Type following command
-     >gem install firewatir-1.0.1-mswin32.gem
+     >gem install firewatir-1.0.2.gem
 
 ==== Mac OSX ====
  # Download ruby from http://www.ruby-lang.org/en/downloads/
- # Download Firefox from http://www.mozilla.com/en-US/firefox/all.html and install using the guidelines given in the reselase notes at http://www.mozilla.com/en-US/firefox/releases (click on version of Firefox you have downloaded).
- # Download the correct Firefox extension from http://people.mozilla.com/~davel/jssh/ and install.
+ # Download Firefox from http://www.mozilla.com/en-US/firefox/all.html and install using the guidelines given in the release notes at http://www.mozilla.com/en-US/firefox/releases (click on version of Firefox you have downloaded).
+ # Download the correct Firefox extension from http://code.google.com/p/firewatir/downloads/list and install.
  # Download the FireWatir gem from http://code.google.com/p/firewatir/downloads/list 
  # Install FireWatir 
-   * Open a teminal and at command prompt change directory where the gem is downloaded and 
+   * Open a terminal or command prompt change directory where the gem is downloaded and 
    * Type following command
-     >gem install firewatir-1.0.1-mswin32.gem
+     >gem install firewatir-1.0.2.gem
