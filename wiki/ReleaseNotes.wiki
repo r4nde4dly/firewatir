@@ -19,6 +19,7 @@ This version also includes new features/fixes as follows:
    # elements_by_path bug by Dan Zwell. 
  # Made it more compatible with scripts written for watir.
  # Added support to wait for Firefox to load the page in case there is redirect on the page that is currently loading.
+ # Code documentation.
 
 ==Future Plans==
  # Concurrent test cases can be run on multiple Firefox instances existing at a time.
