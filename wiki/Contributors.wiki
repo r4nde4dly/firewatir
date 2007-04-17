@@ -1,6 +1,6 @@
 #labels Featured
 == Introduction ==
-This page lists all he people who have participated in the FireWatir development directly or indirectly and made FireWatir a success.
+This page lists all the people who have participated in the FireWatir development directly or indirectly and made FireWatir a success.
 
 
 == Details ==
