@@ -1,5 +1,3 @@
-# Contributors
-
 == Introduction ==
 This page lists all he people who have participated in the FireWatir development directly or indirectly and made FireWatie a success.
 
@@ -19,5 +17,4 @@ This page lists all he people who have participated in the FireWatir development
 
   
  
-
 
