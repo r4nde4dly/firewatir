@@ -6,7 +6,7 @@ This page lists all he people who have participated in the FireWatir development
 
 == Details ==
 
-  # Narayan and Team from ThoughtWorks for suggesting how to handle javascript alert and confirmation popups.
+  # *Narayan and Team* from ThoughtWorks for suggesting how to handle javascript alert and confirmation popups.
   # *Phil* : Find the browser redirect issue.
   # *Todd Fisher* : button support patch. 
 
@@ -19,7 +19,6 @@ This page lists all he people who have participated in the FireWatir development
       * Storing object in a variable using irb.
 
  
-
 
 
 
