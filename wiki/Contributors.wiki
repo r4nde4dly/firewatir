@@ -5,7 +5,7 @@ This page lists all he people who have participated in the FireWatir development
 == Details ==
 
   # *Narayan and Team* from ThoughtWorks for suggesting how to handle javascript alert and confirmation popups.
-
+  # *Viktor Zigo* : Provided working jssh xpi for Linux can be downloaded from his blog at http://alephzarro.com/blog/2007/03/12/jssh-for-firefox-on-linux-because-firewatir-loves-it/ or from the download list http://code.google.com/p/firewatir/downloads/list
   # *Phil* : Find the browser redirect issue.
   # *Todd Fisher* : button support patch. 
   # *Dan Zwell* : 
@@ -17,4 +17,3 @@ This page lists all he people who have participated in the FireWatir development
 
   
  
-
