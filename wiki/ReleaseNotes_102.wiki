@@ -1,12 +1,12 @@
 ===FireWatir version 1.0.2===
 
 ==Introduction==
-This document enlists all the features released with this version and planned features and enhancements in near future.
+This document enlists all the features released with this version and planned features and enhancements in the future.
 
 ==Features in 1.0.2==
 
-Along with the features released in the last version, in this release we are more compatible to Watir scripts, thanks to all the users for sharing their experiences.
-Following is the list of new features/fixes added to FireWatir. 
+This version addresses issues discovered in the prior release and is more compatible to Watir scripts, thanks to all the users for sharing their experiences with FireWatir.
+This version also includes new features/fixes as follows: 
  # Impelmented to_s for all the elements which returns element specific attributes along with attributes that apply to all the elements.
  # Implemented iterators for all the elements.
  # Implemented show_all_objects.
@@ -30,6 +30,5 @@ Following is the list of new features/fixes added to FireWatir.
 ==Known Issues==
  # For now more than one instance of Firefox executing the test cases cannot be run as the JSSh works only at one port shared across all the instances of Firefox browser at a time.
  # For an image displayed on the screen, one cannot get its FileSize, FileCreatedDate.
-
 
 
