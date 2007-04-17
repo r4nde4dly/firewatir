@@ -18,7 +18,7 @@ This version also includes new features/fixes as follows:
    # Firewatir fails finding link by text when html is "<a href="http://www.test.com"><span class="a">Go Test</span></a>" by Kevin Alsteens.
    # elements_by_path bug by Dan Zwell. 
  # Made it more compatible with scripts written for watir.
- # Added support to wait for Firefox to load the page in case there are redirect on the page that is currently loading.
+ # Added support to wait for Firefox to load the page in case there is redirect on the page that is currently loading.
 
 ==Future Plans==
  # Concurrent test cases can be run on multiple Firefox instances existing at a time.
