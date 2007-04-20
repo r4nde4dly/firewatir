@@ -60,8 +60,7 @@ Steps common to all the platforms are:
      >gem install firewatir-1.0.2.gem
  # Run firefox manually using the command in step 4. Go to installation directory of firewatir gem. Go to unittests directory. Run 'mozilla_all_tests.rb'. All tests should pass. If attach_to_new_window test fails then make sure that Firefox is configured to open a link in new *Window* rather than in new *tab*
 
- # For more information please refer to this tutorial. http://crasch.livejournal.com/550521.html
-
+For more information please refer to this tutorial. http://crasch.livejournal.com/550521.html
 
 
 
