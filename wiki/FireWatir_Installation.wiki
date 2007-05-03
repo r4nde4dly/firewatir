@@ -1,13 +1,13 @@
-How to go about setting up FireWatir on different platforms.
+How to go about setting up !FireWatir on different platforms?
 = Introduction =
-This page will describe steps to be followed while installing FireWatir on various OS.
+This page will describe steps to be followed while installing !FireWatir on various OS.
 
 Steps common to all the platforms are:
 
  # Install Ruby from Download ruby from http://www.ruby-lang.org/en/downloads/
  # Install Firefox browser and its JSSh extension.
  # Allow popup for Firefox.
- # Run the unittests written to test FireWatir working. The Unittests are in a folder where FireWatir is installed. On the command prompt go to the FireWatir installation directory under unittests type 
+ # Run the unittests written to test !FireWatir working. The Unittests are in a folder where !FireWatir is installed. On the command prompt go to the !FireWatir installation directory under unittests type 
  \unittests>ruby mozilla_all_tests.rb 
 
 ==== Windows ====
@@ -21,8 +21,8 @@ Steps common to all the platforms are:
    * The extension will not show up in the installed extensions list. For checking the installation of extension; follow steps below
    * Close Firefox. Restart it from command prompt using “[Firefox installation directory]/firefox.exe -jssh”. Make sure you give “-jssh” as parameter other wise Firefox will not start JSSh shell.
    * To check if JSSh is listening on port 9997 run command “telnet localhost 9997” from command prompt.
- # Download the FireWatir gem from http://code.google.com/p/firewatir/downloads/list.
- # Install FireWatir 
+ # Download the !FireWatir gem from http://code.google.com/p/firewatir/downloads/list.
+ # Install !FireWatir 
    * Open a terminal or command prompt change directory where the gem is downloaded and 
    * Type following command
      >gem install firewatir-1.0.2.gem
@@ -37,8 +37,8 @@ Steps common to all the platforms are:
  # Now open terminal and check if jssh is correctly installed using following command:
    telnet localhost 9997
    This should take you to JSSh command prompt. If you are unable to connect to jssh command prompt make sure that extension that you are using is correct. If not log issue at http://code.google.com/p/firewatir/issues
- # If everything works as above, download the FireWatir gem from http://code.google.com/p/firewatir/downloads/list 
- # Install FireWatir 
+ # If everything works as above, download the !FireWatir gem from http://code.google.com/p/firewatir/downloads/list 
+ # Install !FireWatir 
    * Open a terminal or command prompt change directory where the gem is downloaded and 
    * Type following command
      >gem install firewatir-1.0.2.gem
@@ -53,14 +53,15 @@ Steps common to all the platforms are:
  # Now open terminal and check if jssh is correctly installed using following command:
    telnet localhost 9997
    This should take you to JSSh command prompt. If you are unable to connect to jssh command prompt make sure that extension that you are using is correct. If not log issue at http://code.google.com/p/firewatir/issues
- # If everything works as above, download the FireWatir gem from http://code.google.com/p/firewatir/downloads/list 
- # Install FireWatir 
+ # If everything works as above, download the !FireWatir gem from http://code.google.com/p/firewatir/downloads/list 
+ # Install !FireWatir 
    * Open a terminal or command prompt change directory where the gem is downloaded and 
    * Type following command
      >gem install firewatir-1.0.2.gem
  # Run firefox manually using the command in step 4. Go to installation directory of firewatir gem. Go to unittests directory. Run 'mozilla_all_tests.rb'. All tests should pass. If attach_to_new_window test fails then make sure that Firefox is configured to open a link in new *Window* rather than in new *tab*
 
 For more information please refer to this tutorial. http://crasch.livejournal.com/550521.html
+
 
 
 
