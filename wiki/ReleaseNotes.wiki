@@ -1,5 +1,5 @@
 #labels Featured,Phase-Support,Phase-Design
-==FireWatir version 1.1==
+==!FireWatir version 1.1==
 
 ==Introduction==
 This document enlists all the features released with this version and planned features and enhancements in the future.
@@ -24,30 +24,30 @@ This document enlists all the features released with this version and planned fe
  # Concurrent test cases can be run on multiple Firefox instances existing at a time.
  # Logger that will log all the actions extensively.
  # Start Firefox browser with version configured by user.
- # Implement support for TableBody element.
+ # Implement support for !TableBody element.
  # Javascript popup support for open, save, cancel popup, when a file is downloaded.
  # Tabbed browser support (if feasible)
 
 
-==FireWatir version 1.0.2==
+==!FireWatir version 1.0.2==
 
 ==Introduction==
 This document enlists all the features released with this version and planned features and enhancements in the future.
 
 ==Features in 1.0.2==
 
-This version addresses issues discovered in the prior release and is more compatible to Watir scripts, thanks to all the users for sharing their experiences with FireWatir.
+This version addresses issues discovered in the prior release and is more compatible to Watir scripts, thanks to all the users for sharing their experiences with !FireWatir.
 This version also includes new features/fixes as follows: 
  # Implemented to_s for all the elements which returns element specific attributes along with attributes that apply to all the elements.
  # Implemented iterators for all the elements.
  # Implemented show_all_objects.
  # Added support to access 'button' elements. Thanks to patch send by Todd Fisher.
  # Fixed bugs
-   # FireWatir::Firefox.html doesn't exists, by cdc@cyphers.dns2go.com
+   # !FireWatir::Firefox.html doesn't exists, by cdc@cyphers.dns2go.com
    # Cannot access button using value when the html is "<button type="submit">Sign In</button>" by Vikash Kumar.
    # Firewatir fails finding link by text when html is "<a href="http://www.test.com"><span class="a">Go Test</span></a>" by Kevin Alsteens.
    # elements_by_xpath bug by Dan Zwell. 
-   # JavaScript redirection bug by Phil
+   # !JavaScript redirection bug by Phil
  # Made it more compatible with scripts written for watir.
  # Code documentation.
 
@@ -55,28 +55,28 @@ This version also includes new features/fixes as follows:
  # Concurrent test cases can be run on multiple Firefox instances existing at a time.
  # Logger that will log all the actions extensively.
  # Start Firefox browser with version configured by user.
- # Implement support for TableBody element.
+ # Implement support for !TableBody element.
  # Javascript popup support for open, save, cancel popup, when a file is downloaded.
  # Tabbed browser support (if feasible)
 
 ==Known Issues==
  # For now more than one instance of Firefox executing the test cases cannot be run as the JSSh works only at one port shared across all the instances of Firefox browser at a time.
- # For an image displayed on the screen, one cannot get its FileSize, FileCreatedDate.
+ # For an image displayed on the screen, one cannot get its !FileSize, !FileCreatedDate.
 
 
-==FireWatir version 1.0.1==
+==!FireWatir version 1.0.1==
 
 ==Introduction==
 This document enlists all the features released with this version and planned features and enhancements in near future.
 
 ==Features in 1.0.1==
 
-Along with the main endeavor of FireWatir i.e the scripts written for IE on windows platform can be used with minimal changes on Firefox browser, FireWatir comes with following additional features
- # Platform independent, as there is nothing being used that is platform dependent. This enable FireWatir to work on any platform with Firefox browser and the JSSh extension installed. It's been tested on Windows Server 2003 Enterprise Edition, Windows XP Professional SP2. It has not yet been tested on Linux and Mac, but it should work. The gems will be released after the testing.
+Along with the main endeavor of !FireWatir i.e the scripts written for IE on windows platform can be used with minimal changes on Firefox browser, !FireWatir comes with following additional features
+ # Platform independent, as there is nothing being used that is platform dependent. This enable !FireWatir to work on any platform with Firefox browser and the JSSh extension installed. It's been tested on Windows Server 2003 Enterprise Edition, Windows XP Professional SP2. It has not yet been tested on Linux and Mac, but it should work. The gems will be released after the testing.
  # Script can be run on any remote machine, which means any machine connected to your network.
- # FireWatir is tested with ruby version 1.8.2 and 1.8.4.
+ # !FireWatir is tested with ruby version 1.8.2 and 1.8.4.
  # Tested on Firefox version 1.5, 1.5.0.4, 1.5.0.7 , 2.0 and 2.0.0.1.
- # For handling JavaScript popups no third party tool or dll is used, and the window need not to be a active window. Popups are handled in such a way that the action of clicking the popup buttons remains the same. But, the user experience differs in way that the popups are not visible to the users.
+ # For handling !JavaScript popups no third party tool or dll is used, and the window need not to be a active window. Popups are handled in such a way that the action of clicking the popup buttons remains the same. But, the user experience differs in way that the popups are not visible to the users.
  # Firefox has built in support for XPath, so it's faster to get an element by XPath on Firefox.
  # Firefox browser is more compliant with w3c standards. [http://www.xulplanet.com/references/elemref/ Click here] for information on elements their methods and properties.
  # It’s visibly faster when compared to Watir.
@@ -91,12 +91,12 @@ Along with the main endeavor of FireWatir i.e the scripts written for IE on wind
  # Iterators for all the HTML elements. For e.g.: tables, labels, divs, spans, ps etc.
  # Implement to_s method for each element.
  # Start Firefox browser with version configured by user.
- # Implement support for TableBody element.
- # Javascript popup support for open, save, cancel popup, when a file is doenloaded.
+ # Implement support for !TableBody element.
+ # Javascript popup support for open, save, cancel popup, when a file is downloaded.
  # Tabbed browser support (if feasible)
 
 ==Known Issues==
  # For now more than one instance of Firefox executing the test cases cannot be run as the JSSh works only at one port shared across all the instances of Firefox browser at a time.
- # Modal Dialog is not supported on Firefox, so it is not supported by FireWatir as well. Need to check if there are any alternatives methods available to support modal dialog on Firefox browser.
- # For an image displayed on the screen, one cannot get its FileSize, FileCreatedDate.
+ # Modal Dialog is not supported on Firefox, so it is not supported by !FireWatir as well. Need to check if there are any alternatives methods available to support modal dialog on Firefox browser.
+ # For an image displayed on the screen, one cannot get its !FileSize, !FileCreatedDate.
 
