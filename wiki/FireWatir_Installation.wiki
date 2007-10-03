@@ -1,3 +1,4 @@
+#labels Featured
 How to go about setting up !FireWatir on different platforms?
 = Introduction =
 This page will describe steps to be followed while installing !FireWatir on various OS.
@@ -61,5 +62,3 @@ Steps common to all the platforms are:
  # Run firefox manually using the command in step 4. Go to installation directory of firewatir gem. Go to unittests directory. Run 'mozilla_all_tests.rb'. All tests should pass. If attach_to_new_window test fails then make sure that Firefox is configured to open a link in new *Window* rather than in new *tab*
 
 For more information please refer to this tutorial. http://crasch.livejournal.com/550521.html
-
-
