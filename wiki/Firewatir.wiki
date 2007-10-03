@@ -1,7 +1,7 @@
 #labels Phase-Deploy,Featured
 *What is it?*
 
-"FireWatir" is a tool that allows WATiR scripts written for IE to work with the Firefox 
+"!FireWatir" is a tool that allows WATiR scripts written for IE to work with the Firefox 
 browser as well. This usually requires either no change or very small changes to existing 
 scripts. This works with Firefox 1.5 and above.
 
@@ -37,14 +37,14 @@ You can start writing script as shown below, the script opens yahoo mail and sig
 }}}
 *Where do I get it?*
 
-Like other ruby projects FireWatir also has a gem. You can get the gem [http://code.google.com/p/firewatir/downloads/list here].
+Like other ruby projects !FireWatir also has a gem. You can get the gem [http://code.google.com/p/firewatir/downloads/list here].
 
 *How it works*
 
-FireWatir uses [http://www.croczilla.com/jssh/ JSSh](TCP/IP JavaScript Shell 
-Server for Mozilla) to drive the FireFox browser. JSSh allows other programs (like 
-telnet) to establish JavaScript shell connections to a running Mozilla process. Once that 
-connection is made, we can send JavaScript commands over the connection, which are 
+!FireWatir uses [http://www.croczilla.com/jssh/ JSSh](TCP/IP !JavaScript Shell 
+Server for Mozilla) to drive the !FireFox browser. JSSh allows other programs (like 
+telnet) to establish !JavaScript shell connections to a running Mozilla process. Once that 
+connection is made, we can send !JavaScript commands over the connection, which are 
 executed against the DOM of the page loaded in the browser. JSSh listens on port 9997 by 
 default.
 
@@ -52,17 +52,17 @@ default.
 
 $telnet localhost 9997
 
-This will connect to the JavaScript Shell server listening on port 9997 (the default 
+This will connect to the !JavaScript Shell server listening on port 9997 (the default 
 port) on the local machine (i.e. you are telnet-ing from the same machine on which the 
-FireFox instance you want to drive using JSSh is running. JSSh can be also be used to 
-deive a FireFox instance on a remote machine. If this is what you want to do, replace 
+!FireFox instance you want to drive using JSSh is running. JSSh can be also be used to 
+drive a !FireFox instance on a remote machine. If this is what you want to do, replace 
 localhost with the hostname of the remote machine). Once a connection to the JSSh server 
-inside the FireFox instance has been successfully made, you should see the following 
+inside the !FireFox instance has been successfully made, you should see the following 
 message:
 
-Welcome to the Mozilla JavaScript Shell\!
+Welcome to the Mozilla !JavaScript Shell\!
 
-Now you can send JavaScript commands that will run inside the browser and which can 
+Now you can send !JavaScript commands that will run inside the browser and which can 
 access the DOM for pages in the browser. The JS shell prompt character is '>'
 
 > var w0 = getWindows()\[0\];
@@ -83,7 +83,7 @@ This will load url 'http://www.croczilla.com/svg/' in the browser.
 
 Get the document object inside the browser. Now you can use any method that is supported 
 for HTMLDocumentElement. Note that there are some methods that are supported by IE but 
-not by FireFox.
+not by !FireFox.
 
 To quit, just type:
 
@@ -91,13 +91,11 @@ To quit, just type:
 
 Goodbye\!
 
-FireWatir uses this underlying mechanism to drive FireFox. FireWatir creates a socket and 
-connects to the JSSh port on which the target FireFox browser instance's JSSh server is 
-listening. Note that the FireFox instance must have the JSSh extension loaded, and the 
+!FireWatir uses this underlying mechanism to drive !FireFox. !FireWatir creates a socket and connects to the JSSh port on which the target !FireFox browser instance's JSSh server is listening. Note that the !FireFox instance must have the JSSh extension loaded, and the 
 browser must have been started with the \-jssh option (That's one hyphen before the jssh, 
 not two). Right now this needs to be done manually.
 
-FireWatir translates WATiR code into a JavaScript equivalent, which is then transmitted 
+!FireWatir translates code into a !JavaScript equivalent, which is then transmitted 
 to the JSSh server and executed against the DOM of the page loaded in the browser. The 
 top level interface - i.e. the WATiR methods that a tester or programmer can use to write 
 a test script thus stay the same, although the target browser and the mechanism by which 
@@ -105,7 +103,7 @@ it is driven are very different.
 
 *Design Considerations*
 
-While writing the FireWatir tool our main goal was to re-use as much of existing 
+While writing the !FireWatir tool our main goal was to re-use as much of existing 
 code (that was written for IE). So we reorganized the code in 'watir.rb' into the 
 following files:
 
@@ -115,15 +113,15 @@ independent.
 2. _htmlelements.rb_ : This file contains code for accessing HTML elements and performing 
 various operations on them. This is also browser independent code.
 
-3. _MozillaBaseElement.rb_ : This file contains base class for all HTML elements. This 
+3. _!MozillaBaseElement.rb_ : This file contains base class for all HTML elements. This 
 file is for accessing & performing operation on HTML elements in Mozilla browser.
 
-4. _firewatir.rb_ : This file contains the code for driving the brower. More specifically 
+4. _firewatir.rb_ : This file contains the code for driving the browser. More specifically 
 this files contains the code to change the browser state or to get the browser state, 
-Attaching to new pop up window, clicking on javascript button etc.
+Attaching to new pop up window, clicking on !JavaScript button etc.
 
 All the classes defined for HTML elements in '_htmlelements.rb_' inherit from 'Element' 
-class. The definition of 'Element' class comes from '_MozillaBaseElement.rb_'.
+class. The definition of 'Element' class comes from '_!MozillaBaseElement.rb_'.
 
 *Installation*
 
@@ -132,15 +130,13 @@ For installation read the [http://code.google.com/p/firewatir/downloads/list/ In
 *Installation Gotchas*
 Coming Soon
 
-*TroubleShooting*
+*!TroubleShooting*
 
-1. After installing the XPI for JSSh make sure that you restart  FireFox. JSSh extension 
-will not be visible in the extensions windows. You should restart Firefox using '-jssh' 
+1. After installing the XPI for JSSh make sure that you restart  !FireFox. JSSh extension 
+will not be visible in the extensions windows. You should restart !Firefox using '-jssh' 
 option. For e.g.: "C:\Program Files\Firefox\firefox.exe -jssh".
 
 2. Check if JSSh is installed correctly by connecting to port 9997 using Telnet (telnet 
-localhost 9997 if you are telnet-ing from the same machine on which your FireFox instance 
+localhost 9997 if you are telnet-ing from the same machine on which your !FireFox instance 
 is running, or telnet testhost 9997 where testhost is the hostname of the remote machine 
-on which FireFox is running).
-
-
+on which !FireFox is running).
