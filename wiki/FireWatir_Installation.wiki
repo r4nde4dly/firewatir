@@ -19,7 +19,7 @@ Steps common to all the platforms are:
    * Navigate to the path where the downloaded .XPI file is located. Select the .XPI file click open.
    * Wait till a dialog appear stating that do you want to install this extension. Click install.
    * The extension will not show up in the installed extensions list. For checking the installation of extension; follow steps below
-   * Close Firefox. Restart it from command prompt using “[Firefox installation directory]/firefox.exe -jssh”. Make sure you give “-jssh” as parameter other wise Firefox will not start JSSh shell.
+   * Close Firefox. Restart it from command prompt using “Firefox installation directory/firefox.exe -jssh”. Make sure you give “-jssh” as parameter other wise Firefox will not start JSSh shell.
    * To check if JSSh is listening on port 9997 run command “telnet localhost 9997” from command prompt.
  # Download the !FireWatir gem from http://code.google.com/p/firewatir/downloads/list.
  # Install !FireWatir 
@@ -61,7 +61,5 @@ Steps common to all the platforms are:
  # Run firefox manually using the command in step 4. Go to installation directory of firewatir gem. Go to unittests directory. Run 'mozilla_all_tests.rb'. All tests should pass. If attach_to_new_window test fails then make sure that Firefox is configured to open a link in new *Window* rather than in new *tab*
 
 For more information please refer to this tutorial. http://crasch.livejournal.com/550521.html
-
-
 
 
