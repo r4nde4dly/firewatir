@@ -1,0 +1,7 @@
+#summary FireWatir project has moved
+
+= Introduction =
+
+The FireWatir project is merging with the Watir project. You can current information about FireWatir here
+
+  * http://wiki.openqa.org/display/WTR/FireWatir
