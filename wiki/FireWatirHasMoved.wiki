@@ -1,4 +1,5 @@
 #summary FireWatir project has moved
+#labels Featured
 
 = Introduction =
 
