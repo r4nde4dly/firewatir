@@ -1,4 +1,3 @@
-#labels Featured
 How to go about setting up !FireWatir on different platforms?
 = Introduction =
 This page will describe steps to be followed while installing !FireWatir on various OS.
