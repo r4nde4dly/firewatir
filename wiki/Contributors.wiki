@@ -1,4 +1,3 @@
-#labels Featured
 == Introduction ==
 This page lists all the people who have participated in the Firewatir development directly or indirectly and made Firewatir a success.
 
@@ -20,5 +19,3 @@ This page lists all the people who have participated in the Firewatir developmen
 
   
  
-
-
