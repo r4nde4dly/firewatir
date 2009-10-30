@@ -1,4 +1,4 @@
-#labels Featured,Phase-Support,Phase-Design
+#labels Phase-Support,Phase-Design
 ==!FireWatir version 1.1.1==
 
  * Contains couple of bug fixes and improved code related to "click()" events and page load.
